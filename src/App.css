@@ -1,0 +1,38 @@
+.authors {
+  text-align: center;
+  padding: 0 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.author-options {
+  width: 100%;
+}
+
+.author button {
+  width: 100%;
+}
+
+.author button {
+  background: #d3d3d3;
+}
+
+.author--active button {
+  background: #c0c0c0;
+}
+
+.posts {
+  flex: auto;
+}
+
+@media (min-width: 800px) {
+  .authors {
+    flex-direction: row;
+  }
+
+  .author-options {
+    width: 24rem;
+    margin-right: 1rem;
+    flex-shrink: 0;
+  }
+}
