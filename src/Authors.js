@@ -7,12 +7,12 @@ const Authors = ({ fetchAuthors, fetchPosts }) => {
   const [activeAuthor, setActiveAuthor] = useState(null);
   const [posts, setPosts] = useState([]);
 
-  // Load authors on start
+  
   React.useEffect(() => {
     fetchAuthors().then(setAuthors);
   }, []);
 
-  // Load Posts when author changes
+  
   React.useEffect(() => {
     setPosts([]);
 
